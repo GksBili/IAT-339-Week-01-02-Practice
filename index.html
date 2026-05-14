@@ -4,46 +4,86 @@
   <head>
     <!-- The <meta> element defines metadata about an HTML document-->
     <meta charset="utf-8">
-  </head>
+    <title>Style Guide Template</title>
 
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
 
   <body>
 
-    <h1>Html Exercises </h1>
+    <h1>Style Guide Template</h1>
+
+    <p>A template you can use to start building out your own style guides with.</p>
+
+
+    <nav>
+      
+      <p>
+        Go to:
+        <a href="#interactive_elements">Interactive Elements</a>,
+        <a href="#text_elements">Text Elements</a>,
+        <a href="#combined_elements">Combined Elements</a>,
+      </p>
+
+    </nav>
+
+
 
     <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <!-- The <section> tag defines a section in a document. 
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <!-- The <section> tag defines a section in a document. 
     Section Tutorial from https://www.w3schools.com/tags/tag_section.asp 
     -->
-    <section>
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a class="button" href="#">Default Button</a>
+
+      </section>
 
       <section>
-        <h1>An in-text link</h1>
+        <h2>In-text link</h2>
         <!-- html links tutorial https://www.w3schools.com/html/html_links.asp -->
         <a class="button" href="#">This is an in-text Link</a>
       </section>
 
       <section>
-        <h1>A text input field and a label</h1>
+        <h2>Image as a Link</h2>
+        <!-- image & its link tutorial https://www.w3schools.com/html/html_images.asp-->
+        <a href="#">
+        <img src="img/selfi.jpg" alt="Sample image" width="200">
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
         <!-- label tutorial from https://www.w3schools.com/tags/tag_input.asp 
          -->
-
         <label for="Name">Your Name:</label>
         <input type="text" id="Name" name="username">
 
       </section>
 
-      <section>
-        <h1>An image as a link</h1>
-        <!-- image & its link tutorial https://www.w3schools.com/html/html_images.asp-->
-        <a href="#">
-        <img src="img/selfi.jpg" alt="Sample image" width="100">
-        </a>
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
-      </section>
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
 
       <section>
-        <h1>Four levels of heading</h1>
+        <h2>Headings</h2>
         <!-- heading tutorial https://www.w3schools.com/html/html_headings.asp -->
         <h1>Heading h1</h1>
         <h2>Heading h2</h2>
@@ -52,7 +92,7 @@
       </section>
 
       <section>
-        <h1>A paragraph</h1>
+        <h2>Paragraphs</h2>
         <!-- paragraph tutorial https://www.w3schools.com/html/html_paragraphs.asp -->
         <p>"It was much better to imagine men in some smoky room somewhere, 
           made mad and cynical by privilege and power; plotting over the brandy. 
@@ -62,12 +102,36 @@
           I must be. I've certainly never thought of myself as one of Them. No one ever thinks of themselves as one of Them. We're always one of Us. It's Them that do the bad things." 
           ~ Jingo, Terry Pratchett</p>
       </section>
-      
+
+      <section>
+        <h2>Bulleted Lists</h2>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+      </section>
+
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+        
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
 
   </body>
 </html>
-
-
 
